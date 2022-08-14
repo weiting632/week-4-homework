@@ -1,0 +1,343 @@
+
+
+.banner{
+    background-image: url(../images/home-header.png);
+    height: 787px;
+    background-size: cover;
+    background-position: center center;
+    .banner-text{
+        padding-top: 296px;
+        text-align: right;
+        p{
+           font-size: 36px;
+           color: $primary-color-dark;
+        }
+        h2{
+            font-size: 64px;
+            color: $primary-color-dark;
+        }
+        button{
+            background-color: $primary-color-light;
+            color:#ffffff;
+            font-size: 20px;
+            border: 0px;
+        }
+    }
+}
+@include pad{
+    .banner{
+        background-image: url(../images/home-header-sm.png);
+        
+        .banner-text{
+            
+            p{
+                font-size: 32px;
+            }
+            h2{
+                font-size: 48px;
+            }
+        }
+    }
+}
+@include phone{
+    .banner{
+        height: 396px;
+        .banner-text{
+            padding-top: 144px;
+            p{
+                font-size: 16px;
+            }
+            h2{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+.work-content{
+    background-color: $secondary-color;
+    
+    h2{
+        text-align: center;
+        color: $primary-color-dark;
+        font-size: 48px;
+    }
+    ul{
+        display:flex;
+        text-align: center;
+        li{
+            
+            img{
+                max-width: 84px;
+                height: 84px;
+            }
+            h3{
+                
+                color: $primary-color-dark; ;
+                font-size: 24px;
+            }
+            p{
+                text-align: left;
+            }
+        }
+       
+    }
+}
+
+@include pad{
+    .work-content{
+        ul{
+            flex-wrap: wrap;
+            li{
+                max-width: 50%;
+                padding: 48px 12px;
+            }
+        }
+    }
+}
+@include phone{
+    .work-content{
+        h2{
+            font-size: 24px;
+        }
+        ul{
+            flex-wrap: wrap;
+            li{
+                max-width: 100%;
+                padding: 0 12px;
+            }
+        }
+    }
+}
+
+.claasic{
+
+    h2{
+        color: $primary-color-dark;
+        text-align: center;
+        font-size: 48px;
+        
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: -12px;
+        margin-right: -12px;
+        li{
+            width: calc((100%/3 - 16px));
+            margin: 0 12px;
+            height: auto;
+            img{
+              width: 100%;
+              height: auto;
+            }
+            h3{
+                color: $primary-color-dark;
+                font-size: 48px;
+            }
+        }
+           
+    }
+}
+
+@include pad{
+    .claasic{
+        ul{
+            flex-wrap:wrap;
+            li{
+                width:50%;
+            }
+        }
+    }
+}
+@include phone{
+    .claasic{
+        h2{
+            font-size: 24px;
+        }
+        ul{
+            li{
+                width: 90%;
+            }
+        }
+    }
+}
+.co-brand{
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    background-position: center center;
+    .inside-banner{
+        h2{
+           color:#ffffff;
+           font-size: 48px;
+           text-align: center;
+        }
+        ul{
+            display: flex;
+            
+            li{
+                width: 50%;
+                height: auto;
+                img{
+                    width:100%;
+                    height: auto;
+                }
+                h3{
+                    width: 100%;
+                    text-align: center;
+                    color: $primary-color-dark;
+                    font-size: 48px;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}
+@include pad{
+    .co-brand{
+        background-image: url(../images/index-bg-md.png);
+        .container{
+            .inside-banner{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@include phone{
+    .co-brand{
+        background-image: url(../images/index-bg-md.png);
+        .container{
+            .inside-banner{
+                h2{
+                    font-size: 24px;
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li{
+                        width:100%;
+                        margin-top: 24px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.customer{
+    h2{
+        font-size: 48px;
+        color: $primary-color-dark;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            width:calc(100%/4 - 18px);
+            border: 1px solid black;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            span{
+                color: #707070;
+            }
+        }
+    }
+}
+@include pad{
+    .customer{
+        ul{
+            flex-wrap: wrap;
+            li{
+                width: 47%;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+@include phone{
+    .customer{
+        h2{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        ul{
+            flex-wrap: wrap;
+            li{
+                width: 90%;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+.contact-us{
+    background-color: $secondary-color;
+    .contact-us-center{
+        max-width: 626px;
+        height: auto;
+        margin: 0 auto;
+        h3{
+            text-align: center;
+            font-size: 48px;
+            color: $primary-color-dark;
+        }
+        p{
+            font-size: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            label{
+                text-align: left;
+            }
+            input{
+                max-width: 626px;
+                height: 36px;
+            }
+            .feedback{
+                height: 136px;
+            }
+            .input-flex{
+                display: flex;
+                justify-content: flex-start;
+                .privacy{
+                    width: 24px;
+                    height: 24px;
+                    
+                }
+            }
+            .submit{
+                background-color:$primary-color-dark ;
+                color: #ffffff;
+                width: 416px;
+                height: 56px;
+                align-self: center;
+                
+            }
+        }
+    }
+}
+@include pad{
+
+}
+@include phone{
+    .contact-us{
+        .submit{
+            width: 348px;
+        }
+    }
+}
